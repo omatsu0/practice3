@@ -17,8 +17,7 @@ class HelloController extends Controller
 
         $html=$head.tag('title','Hello/Index').$style.$body;
         $data = [
-        'msg'=>'これはコントローラから渡されたメッセージです',
-        'id'=>$id
+        'msg'=>'これはBladeを利用したサンプルです',
         ];
         return view('hello.index',$data);
 
